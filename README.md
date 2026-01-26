@@ -58,6 +58,21 @@ Aqui está o texto formatado com o alinhamento justificado e a estrutura organiz
 <p align="justify">🎯 Precisão de Contexto (Precision 0.95 média): Quase todas as respostas estão no primeiro chunk retornado, o que torna o sistema muito rápido e eficiente.</p>
 
 ---
+### Detalhamento das perguntas 7 e 9::
+
+<p align="justify">Pergunta 7: O que o comando zenml init faz?</p>
+<p align="justify">O que a RAG respondeu: "O comando zenml init inicializa um novo projeto ZenML no diretório atual, criando a estrutura necessária para gerenciar pipelines e configurações locais."</p>
+<p align="justify">O que era a Resposta Correta (Ground Truth): "O comando zenml init cria um diretório oculto .zen no seu projeto, que armazena as configurações do pipeline e o banco de dados local."</p>
+<p align="justify">Por que deu 0.0: A IA foi genérica demais. O PDF diz especificamente que ele cria a pasta .zen. Como a IA não mencionou esse detalhe técnico crucial presente no texto, o Ragas considerou a resposta como não fiel ao documento.</p>
+
+---
+
+<p align="justify">Pergunta 9: Qual decorador é utilizado para definir uma tarefa (step)?</p>
+<p align="justify">O que a RAG respondeu: "O decorador utilizado para definir uma tarefa ou etapa em um pipeline do ZenML é o @step."</p>
+<p align="justify">O que era a Resposta Correta (Ground Truth): "Utiliza-se o decorador @step para definir funções que representam etapas individuais do pipeline."</p>
+<p align="justify">Por que deu 0.0 (O erro curioso): Este é um caso típico de "rigidez" do avaliador. A resposta da IA está correta, mas a métrica de Faithfulness deu 0.0 provavelmente porque a IA não extraiu a justificativa técnica exatamente como estava no trecho recuperado ou o formato do código no contexto estava truncado. Note que o seu Context Precision aqui foi baixo (0.33), o que significa que a resposta estava "escondida" no meio de outros textos, confundindo a verificação de fidelidade.</p>
+
+---
 
 ### Resumo Estatístico da RAG:
 
