@@ -31,6 +31,8 @@ Avaliando RAG com Ragas
 
 <p align="justify">Aqui está a tabela completa com todas as métricas calculadas para as  20 perguntas, extraídas diretamente dos resultados do  processo de avaliação com Ragas.</p>
 
+![Tab1. Resultados](URL_da_imagem)
+
 <p align="justify">Note que o sistema de busca está excelente (Recall 1.0), mas o desafio atual é a Fidelidade (Faithfulness) em algumas questões técnicas onde a IA se confundiu.</p>
 
 ---
