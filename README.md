@@ -58,7 +58,7 @@ Aqui está o texto formatado com o alinhamento justificado e a estrutura organiz
 <p align="justify">🎯 Precisão de Contexto (Precision 0.95 média): Quase todas as respostas estão no primeiro chunk retornado, o que torna o sistema muito rápido e eficiente.</p>
 
 ---
-### Detalhamento das perguntas 7 e 9::
+### Detalhamento das perguntas 7 e 9:
 
 <p align="justify">Pergunta 7: O que o comando zenml init faz?</p>
 <p align="justify">O que a RAG respondeu: "O comando zenml init inicializa um novo projeto ZenML no diretório atual, criando a estrutura necessária para gerenciar pipelines e configurações locais."</p>
