@@ -51,11 +51,11 @@ Aqui está o texto formatado com o alinhamento justificado e a estrutura organiz
 
 ### Análise dos Destaques
 
-<p align="justify">🏆 **Domínio da Recuperação (Recall 1.00):** Foi atingida nota máxima em todas as 20 perguntas. Isso significa que não há "pontos cegos" no seu PDF; o Redis está entregando a resposta correta para a IA todas as vezes.</p>
+<p align="justify">🏆 Domínio da Recuperação (Recall 1.00): Foi atingida nota máxima em todas as 20 perguntas. Isso significa que não há "pontos cegos" no seu PDF; o Redis está entregando a resposta correta para a IA todas as vezes.</p>
 
-<p align="justify">⚠️ **Alerta na Pergunta 7 e 9 (Faithfulness 0.00):** Nestes casos específicos, a IA encontrou o contexto, mas a resposta gerada foi considerada "infiel" ao documento original pelo Ragas. Geralmente, isso acontece quando a IA tenta ser prestativa demais e adiciona informações que não estavam no texto.</p>
+<p align="justify">⚠️ Alerta na Pergunta 7 e 9 (Faithfulness 0.00): Nestes casos específicos, a IA encontrou o contexto, mas a resposta gerada foi considerada "infiel" ao documento original pelo Ragas. Geralmente, isso acontece quando a IA tenta ser prestativa demais e adiciona informações que não estavam no texto.</p>
 
-<p align="justify">🎯 **Precisão de Contexto (Precision 0.95 média):** Quase todas as respostas estão no primeiro chunk retornado, o que torna o sistema muito rápido e eficiente.</p>
+<p align="justify">🎯 Precisão de Contexto (Precision 0.95 média): Quase todas as respostas estão no primeiro chunk retornado, o que torna o sistema muito rápido e eficiente.</p>
 
 ---
 
