@@ -47,7 +47,6 @@ Avaliando RAG com Ragas
 <p align="justify"> Answer Relevancy (Sempre alto): Isso mostra que a IA é "boa de papo". Mesmo quando ela erra o conteúdo técnico, ela escreve uma resposta que parece fazer sentido e está no formato correto.</p>
 
 ---
-Aqui está o texto formatado com o alinhamento justificado e a estrutura organizada para o seu relatório:
 
 ### Análise dos Destaques
 
