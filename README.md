@@ -48,7 +48,7 @@ Avaliando RAG com Ragas
 
 ---
 
-### Resumo Estatístico da sua RAG:
+### Resumo Estatístico da RAG:
 
 <p align="justify"> Capacidade de Recuperação: 100% (Recall 1.0)</p>
 <p align="justify"> Precisão da Resposta: ~78% (Média de Faithfulness)</p>
