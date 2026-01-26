@@ -1,0 +1,82 @@
+[
+  {
+    "question": "1. O que é o ZenML?",
+    "answer": "O ZenML é um framework de MLOps de código aberto, extensível e agnóstico a ferramentas, projetado para criar pipelines de aprendizado de máquina prontos para produção."
+  },
+  {
+    "question": "2. Qual é o objetivo principal do ZenML para cientistas de dados?",
+    "answer": "O objetivo principal é permitir que cientistas de dados se concentrem no desenvolvimento de modelos, enquanto o framework cuida da infraestrutura, garantindo que os fluxos de trabalho sejam reproduzíveis e escaláveis."
+  },
+  {
+    "question": "3. Por que o ZenML é considerado \"agnóstico a frameworks\"?",
+    "answer": "Ele é agnóstico porque permite a integração com qualquer biblioteca de ML (como PyTorch, TensorFlow ou Scikit-learn) e ferramentas de infraestrutura (como AWS, GCP, Airflow ou Kubeflow) sem exigir grandes mudanças no código."
+  },
+  {
+    "question": "4. Onde o ZenML pode ser executado?",
+    "answer": "Ele pode ser executado localmente (localhost) ou em ambientes de nuvem e orquestradores gerenciados."
+  },
+  {
+    "question": "5. Qual versão do Python é necessária para configurar o ambiente ZenML?",
+    "answer": "O ZenML requer o Python 3.8 ou superior."
+  },
+  {
+    "question": "6. Qual comando é utilizado para instalar o ZenML via terminal?",
+    "answer": "O comando utilizado é `pip install zenml`."
+  },
+  {
+    "question": "7. O que o comando `zenml init` faz no projeto?",
+    "answer": "O comando `zenml init` inicializa um novo repositório ZenML no diretório atual, criando a estrutura necessária para rastrear seus pipelines e stacks."
+  },
+  {
+    "question": "8. Quais são as quatro etapas básicas demonstradas no pipeline de exemplo?",
+    "answer": "As etapas comuns são: ingestão de dados (ingest_data), pré-processamento/limpeza, treinamento do modelo (model_trainer) e avaliação do modelo (evaluation)."
+  },
+  {
+    "question": "9. Qual decorador é usado para definir uma tarefa específica dentro de um pipeline?",
+    "answer": "O decorador usado para definir uma tarefa é o `@step`."
+  },
+  {
+    "question": "10. Como o ZenML define o conceito de \"Steps\" (Etapas)?",
+    "answer": "Steps são as unidades fundamentais de um pipeline ZenML, representando tarefas modulares de processamento de dados ou treinamento que podem ser versionadas e armazenadas em cache."
+  },
+  {
+    "question": "11. O que acontece com a saída de cada etapa no ZenML?",
+    "answer": "A saída de cada etapa é automaticamente persistida como um 'artefato' no Artifact Store da sua Stack, permitindo o rastreamento e o cache entre execuções."
+  },
+  {
+    "question": "12. O que é uma \"Stack\" (Pilha) no ZenML?",
+    "answer": "Uma Stack é uma configuração de componentes de infraestrutura (como orquestrador, repositório de artefatos e rastreador de experimentos) que define onde e como o pipeline será executado."
+  },
+  {
+    "question": "13. Cite exemplos de componentes que podem fazer parte de uma Stack.",
+    "answer": "Exemplos incluem Artifact Stores (S3, GCS), Orchestrators (Local, Kubeflow), Experiment Trackers (MLflow, W&B) e Model Deployers (Seldon, BentoML)."
+  },
+  {
+    "question": "14. Como se pode desativar o cache em um pipeline?",
+    "answer": "O cache pode ser desativado definindo `enable_cache=False` no decorador `@pipeline` ou `@step`, ou via linha de comando ao executar o pipeline."
+  },
+  {
+    "question": "15. Com quais tipos de ferramentas o ZenML se integra para automação de processos?",
+    "answer": "Integra-se com ferramentas de CI/CD (GitHub Actions, GitLab CI), orquestradores de workflow (Airflow, Argo) e ferramentas de monitoramento."
+  },
+  {
+    "question": "16. Qual é a recomendação de \"Melhor Prática\" para o gerenciamento de requisitos?",
+    "answer": "A recomendação é definir explicitamente as dependências de cada step ou pipeline para garantir que o ambiente de execução seja idêntico ao de desenvolvimento."
+  },
+  {
+    "question": "17. Por que é recomendado manter as etapas (steps) modulares?",
+    "answer": "Para facilitar o reuso de código, permitir o cache individual de etapas que não mudaram e simplificar a depuração de erros isolados."
+  },
+  {
+    "question": "18. Qual comando deve ser usado para listar todas as execuções de um pipeline?",
+    "answer": "Utiliza-se o comando `zenml pipeline runs list`."
+  },
+  {
+    "question": "19. Como você pode visualizar os artefatos gerados pelo ZenML?",
+    "answer": "Os artefatos podem ser visualizados programaticamente via Python API ou visualmente através do ZenML Dashboard."
+  },
+  {
+    "question": "20. Como se inicia o painel visual (dashboard) do ZenML?",
+    "answer": "Para iniciar o painel visual, utiliza-se o comando `zenml up` (ou `zenml dashboard` em versões mais recentes)."
+  }
+]

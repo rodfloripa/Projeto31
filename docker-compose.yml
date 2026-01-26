@@ -1,0 +1,37 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: >
+      sh -c "pip install --no-cache-dir flask PyPDF2 langchain-openai langchain-community langchain-text-splitters tiktoken redis==5.0.1 hiredis langchain && 
+             python app.py"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis/redis-stack:latest
+    ports:
+      - "6379:6379"
+
+  evaluator:
+    image: python:3.10-slim
+    volumes:
+      - .:/app
+    working_dir: /app
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    # Versões fixadas para evitar o erro de pydantic_v1
+    command: >
+      sh -c "pip install --no-cache-dir ragas==0.1.1 langchain-core==0.1.45 langchain-openai==0.1.1 pandas requests datasets && 
+             python script_ragas.py"
